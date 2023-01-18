@@ -1,0 +1,11 @@
+textarea {
+    padding: 10px 24px;
+    height: 124px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    font-family: "Lato", sans-serif;
+}
+
+.standard {
+    width: 610px;
+}
