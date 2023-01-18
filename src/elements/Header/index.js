@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Toggler from '../../smalls/Toggler';
 
 const Header = () => {
     return (
         <>
-        Header
             <nav>
                 <ul>
-                    <li><Link to="/">Home</Link></li>                    
-                    <li><Link to="/projects">Projects</Link></li>                    
+                    <li><Link to="/">Home</Link>  (logo will be here)</li>
+                    <li><Link to="/projects">Projects</Link></li>
                 </ul>
             </nav>
         </>
