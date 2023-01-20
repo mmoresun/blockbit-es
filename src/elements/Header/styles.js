@@ -8,8 +8,7 @@ const StyledHeader = styled.header`
     box-sizing: border-box;
     background-color: #2982E2;
     width: 100%;
-    min-height: 114px;
-    padding: 0 20px;      
+    min-height: 114px;         
     /* position: fixed;
     top: 0;
     left: 0;         */

@@ -7,8 +7,10 @@ const StyledHeaderWrapper = styled.div`
     justify-content: center;
     box-sizing: border-box;    
     width: 100%;
-    height: 100%;
-    padding: 0 20px;
+    height: 100%;   
+    
+
+        
     /* position: fixed;
     top: 0;
     left: 0; */
