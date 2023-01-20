@@ -1,7 +1,7 @@
 import React from 'react';
 import StyledP from './style';
 
-// P can be "white" or "grey", don't forget to set it. 
+// P can be "white" or "grey", so don't forget to set it. 
 // Example:
 // <P pColor="white">Some text</P>
 

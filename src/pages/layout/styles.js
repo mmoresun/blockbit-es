@@ -8,6 +8,7 @@ const StyledLayout = styled.div`
   box-sizing: border-box;  
   width: 100%;
   overflow-x: hidden;
-  border: 2px solid red;
+  height: 200vh;
+  /* border: 2px solid red; */
 `;
 export default StyledLayout;

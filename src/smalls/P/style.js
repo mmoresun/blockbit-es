@@ -5,7 +5,7 @@ const StyledP = styled.p`
 /* P text color settings: red by default (it means error), white (#FFFFFF) and grey (#6E778C) set by user in props */
 color: red;
 color: ${props => props.pColor === "grey" && "#6E778C"};
-color: ${props => props.pColor === "white" && " #FFFFFF"};
+color: ${props => props.pColor === "white" && "#FFFFFF"};
 
 /* other settings */
 font-style: normal;
