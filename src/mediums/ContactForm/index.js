@@ -16,7 +16,7 @@ const ContactForm = () => {
         <StyledContactForm onSubmit={(e) => e.preventDefault()} >
             <InputsWrapper>
                 <Input placeholder="Full name" />
-                <Input placeholder="Company name (optional)" />
+                <Input placeholder="Company (optional)" />
             </InputsWrapper>
             <InputsWrapper>
                 <Input placeholder="Email address" />
