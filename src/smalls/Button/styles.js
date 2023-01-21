@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { device } from "../../utils/media-queries";
+
 const StyledBtn = styled.button`
 /* button height settings: is button calls with "big" or "small" prop */
 height: ${props => props.buttonSize === "big" && "122px"};
@@ -8,10 +10,12 @@ height: ${props => props.buttonSize === "small" && "48px"};
 /* text color when button is enabled and disabled */
 color: ${props => props.enabled ? "#2982E2" : "#6E778C"};
 
+/* button width settings */
+max-width: ${props => props.isWide ? 'none' : '190px'};
+
 /* other button settings */
 border: none;
 width: 100%;
-max-width: 190px;
 background: #FFFFFF;
 border-radius: 30px;
 cursor: pointer;
@@ -27,6 +31,12 @@ text-align: center;
  color: ${props => props.enabled ? "#1A67BB" : "#6E778C"};
 transition: all 0.25s ease 0s;
 }
+
+
+@media ${device.mobile} {
+	max-width: none;
+    height: 48px;
+  }
 
 `;
 

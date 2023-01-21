@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { device } from "../../utils/media-queries";
+
 const StyledInput = styled.input`
  width: 100%;
  max-width: 295px;
@@ -11,6 +13,10 @@ const StyledInput = styled.input`
  font-size: 16px;
  padding: 12px 24px;
  background-color: #FFFFFF;
- box-sizing: border-box;
+ box-sizing: border-box; 
+
+ @media ${device.tablet} {
+    max-width: none;
+  }
 `;
 export default StyledInput;
