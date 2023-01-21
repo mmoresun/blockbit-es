@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { device } from "../../utils/media-queries";
+
 const StyledH2 = styled.h2`
 
 /* H2 text color settings: red by default (it means error), 
@@ -12,10 +14,23 @@ color: ${props => props.h2Color === "blue" && "#101820"};
 color: ${props => props.h2Color === "grey" && "#6E778C"};
 
 /* other settings */
-
 font-style: normal;
 font-weight: 700;
 font-size: 54px;
-line-height: 120%;
+line-height: 46px;
+
+@media ${device.tablet} {
+	font-size: 42px;
+  }
+
+  @media ${device.mobile} {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  
+
 `;
+
+
+
 export default StyledH2;
