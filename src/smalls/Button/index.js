@@ -16,8 +16,7 @@ const Button = (props) => {
     return (
         <StyledBtn
             buttonSize={props.buttonSize}
-            enabled={props.enabled}       
-            isWide={props.isWide}     
+            enabled={props.enabled}                     
             type={props.type}
         >
             {props.children}

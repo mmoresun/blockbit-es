@@ -9,9 +9,6 @@ import Button from '../../smalls/Button';
 
 const ContactForm = () => {
 
-    const screenWidth = window.innerWidth;
-    console.log(screenWidth);
-
     return (
         <StyledContactForm onSubmit={(e) => e.preventDefault()} >
             <InputsWrapper>
@@ -24,8 +21,7 @@ const ContactForm = () => {
             </InputsWrapper>
             <TextArea placeholder="Message..." />
             <Toggler text="Send me NDA" />
-            <Button
-                isWide={screenWidth < 481}
+            <Button                
                 buttonSize="small"
                 enabled={false}
                 onClick={(e) => e.preventDefault()}
