@@ -33,7 +33,7 @@ transition: all 0.25s ease 0s;
 }
 
 @media ${device.mobile} {
-	max-width: ${props => props.headerButton ? "none" : "190px"};
+	max-width: ${props => props.headerButton ? "190px": "none" };
     height: 48px;
   }
 

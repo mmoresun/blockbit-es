@@ -24,7 +24,7 @@ const ContactForm = () => {
             <Button                                
                 buttonSize="small"
                 enabled={false}
-                onClick={(e) => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}                            
             >
                 Submit
             </Button>
