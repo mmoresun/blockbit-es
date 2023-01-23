@@ -5,6 +5,7 @@ import './index.css'
 import Layout from './layout'
 import Introduction from '../elements/Introduction'
 import Attributes from '../elements/Attributes'
+import Technologies from '../elements/Technologies'
 
 const IndexPage = () => {
 
@@ -14,6 +15,7 @@ const IndexPage = () => {
     >      
       <Introduction />
       <Attributes />
+      <Technologies />
     </Layout>
   )
 }

@@ -37,6 +37,7 @@ line-height: 120%;
  height: 2px;
  background-color: rgb(0, 255, 202);
  display: block;
+ margin-bottom: 80px;
  content: "";
  /* if underline is not set, hide ::after element */
  display: ${props => !props.underline && "none"};
