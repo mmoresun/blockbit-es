@@ -23,7 +23,7 @@ const Header = () => {
                         <StyledHeaderLink to="/projects">Projects</StyledHeaderLink>
                         <StyledHeaderLink to="#">Solutions</StyledHeaderLink>
                     </HeaderLinkWrapper>
-                    <Button buttonSize="small" enabled>Contact Us</Button>
+                    <Button buttonSize="small" enabled headerButton>Contact Us</Button>
                 </HeaderContentWrapper>
             </HeaderWrapper>
         </StyledHeader>

@@ -17,7 +17,7 @@ const Button = (props) => {
         <StyledBtn
             buttonSize={props.buttonSize}
             enabled={props.enabled}                     
-            type={props.type}
+            type={props.type}            
         >
             {props.children}
         </StyledBtn>

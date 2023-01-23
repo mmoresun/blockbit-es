@@ -17,7 +17,7 @@ color: ${props => props.h2Color === "grey" && "#6E778C"};
 font-style: normal;
 font-weight: 700;
 font-size: 54px;
-line-height: 46px;
+line-height: 65px;
 
 @media ${device.tablet} {
 	font-size: 42px;
