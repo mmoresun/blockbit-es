@@ -14,7 +14,7 @@ margin: ${props => props.pMargin};
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
-padding: 1px;
+padding: 0 0 1px;
 /* line-height: 150%; */
 `;
 
