@@ -6,6 +6,7 @@ const StyledP = styled.p`
 color: red;
 color: ${props => props.pColor === "grey" && "#6E778C"};
 color: ${props => props.pColor === "white" && "#FFFFFF"};
+color: ${props => props.pColor === "blue" && "rgb(41, 130, 226)"};
 
 /* Margin settings */
 margin: ${props => props.pMargin};
