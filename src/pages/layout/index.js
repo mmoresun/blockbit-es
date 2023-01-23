@@ -10,9 +10,9 @@ const Layout = (props) => {
     return (
         <StyledLayout>
             <Header />
-            <main>
-                <h1>{props.pageTitle}</h1>
-                {props.children}
+            <main style={{ width: '100%', boxSizing: 'border-box' }}>
+                {/* <h1>{props.pageTitle}</h1> */}
+                {props.children}                
             </main>
             <Contacts />
             <Footer />

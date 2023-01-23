@@ -17,6 +17,8 @@ max-width: 190px;
 background: #FFFFFF;
 border-radius: 30px;
 cursor: pointer;
+display: inline-block;
+
 
 /* button text format settings */
 font-weight: 700;
@@ -31,7 +33,7 @@ transition: all 0.25s ease 0s;
 }
 
 @media ${device.mobile} {
-	max-width: none;
+	max-width: ${props => props.headerButton ? "none" : "190px"};
     height: 48px;
   }
 

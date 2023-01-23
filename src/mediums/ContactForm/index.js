@@ -21,7 +21,7 @@ const ContactForm = () => {
             </InputsWrapper>
             <TextArea placeholder="Message..." />
             <Toggler text="Send me NDA" />
-            <Button                
+            <Button                                
                 buttonSize="small"
                 enabled={false}
                 onClick={(e) => e.preventDefault()}
