@@ -15,7 +15,6 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 padding: 0 0 1px;
-/* line-height: 150%; */
 `;
 
 export default StyledP;

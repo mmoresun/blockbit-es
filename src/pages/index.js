@@ -4,6 +4,7 @@ import './index.css'
 
 import Layout from './layout'
 import Introduction from '../elements/Introduction'
+import Attributes from '../elements/Attributes'
 
 const IndexPage = () => {
 
@@ -12,7 +13,7 @@ const IndexPage = () => {
     pageTitle="Home Page"
     >      
       <Introduction />
-      
+      <Attributes />
     </Layout>
   )
 }

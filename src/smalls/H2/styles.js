@@ -17,18 +17,30 @@ color: ${props => props.h2Color === "grey" && "#6E778C"};
 /* font-style: normal; */
 font-weight: 700;
 font-size: 54px;
-line-height: 65px;
+line-height: 120%;
 
 @media ${device.tablet} {
 	font-size: 42px;
-  }
+ }
 
-  @media ${device.mobile} {
-    font-size: 32px;
-    line-height: 38px;
-  }
-  
+ @media ${device.mobile} {
+ font-size: 32px;
+ line-height: 38px;
+ }
 
+::after {
+ position: relative;
+ top: 16px;
+ left: ${props => props.underline === "left" && "0px"};
+ right: ${props => props.underline === "center" && "calc(50% - 95px)"};
+ width: 100px;
+ height: 2px;
+ background-color: rgb(0, 255, 202);
+ display: block;
+ content: "";
+ /* if underline is not set, hide ::after element */
+ display: ${props => !props.underline && "none"};
+}
 `;
 
 
