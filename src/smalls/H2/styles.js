@@ -14,7 +14,7 @@ color: ${props => props.h2Color === "blue" && "#101820"};
 color: ${props => props.h2Color === "grey" && "#6E778C"};
 
 /* other settings */
-font-style: normal;
+/* font-style: normal; */
 font-weight: 700;
 font-size: 54px;
 line-height: 65px;

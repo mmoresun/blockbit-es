@@ -7,11 +7,15 @@ color: red;
 color: ${props => props.pColor === "grey" && "#6E778C"};
 color: ${props => props.pColor === "white" && "#FFFFFF"};
 
+/* Margin settings */
+margin: ${props => props.pMargin};
+
 /* other settings */
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
-line-height: 150%;
+padding: 1px;
+/* line-height: 150%; */
 `;
 
 export default StyledP;

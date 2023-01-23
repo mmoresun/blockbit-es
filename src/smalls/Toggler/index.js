@@ -59,7 +59,7 @@ const IOSSwitch = styled((props) => (
 
 export default function Toggler(props) {
   return (
-    <FormGroup style={{display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '10px', margin: '0 0 0 11px'}}>
+    <FormGroup style={{display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '10px', margin: '0 0 0 5px'}}>
       <FormControlLabel
         control={<IOSSwitch sx={{ m: 1 }} defaultChecked />}                
       />
