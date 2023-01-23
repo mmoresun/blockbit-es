@@ -24,11 +24,11 @@ const Footer = () => {
             <FooterContentWrapper>
                 <FooterSocialWrapper>
                     <FooterSocIconsWpapper>
-                        <a href="https://www.linkedin.com/company/blockbites" target="_blank"><StyledFooterIcon src={footerLinkedinIcon} width="24px" alt="LinkedIn" /></a>
-                        <a href="https://twitter.com/theblockbites" target="_blank"><StyledFooterIcon src={footerTwitterIcon} alt="Twitter" /></a>
-                        <a href="https://www.youtube.com/@blockbites" target="_blank"><StyledFooterIcon src={footerYouTubeIcon} alt="YouTube" /></a>
-                        <a href="https://medium.com/@theblockbites" target="_blank"><StyledFooterIcon src={footerMediumIcon} alt="Medium" /></a>
-                        <a href="https://t.me/+7nneDXbzEgMxNDBk" target="_blank"><StyledFooterIcon src={footerTelegramIcon} alt="Telegram" /></a>
+                        <a href="https://www.linkedin.com/company/blockbites" target="_blank" rel="noreferrer"><StyledFooterIcon src={footerLinkedinIcon} width="24px" alt="LinkedIn" /></a>
+                        <a href="https://twitter.com/theblockbites" target="_blank" rel="noreferrer"><StyledFooterIcon src={footerTwitterIcon} alt="Twitter" /></a>
+                        <a href="https://www.youtube.com/@blockbites" target="_blank" rel="noreferrer"><StyledFooterIcon src={footerYouTubeIcon} alt="YouTube" /></a>
+                        <a href="https://medium.com/@theblockbites" target="_blank" rel="noreferrer"><StyledFooterIcon src={footerMediumIcon} alt="Medium" /></a>
+                        <a href="https://t.me/+7nneDXbzEgMxNDBk" target="_blank" rel="noreferrer"><StyledFooterIcon src={footerTelegramIcon} alt="Telegram" /></a>
                     </FooterSocIconsWpapper>
                     <div>
                         Copyright Blockbites 2022
