@@ -10,6 +10,7 @@ const TechnoCarouselContent = () => {
         <Carousel
             showStatus={false}
             showArrows={false}
+            showThumbs={false}
         >
             <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
                 <StyledTechnoPrevSlide>

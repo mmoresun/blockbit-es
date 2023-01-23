@@ -5,7 +5,8 @@ import { device } from "../../../utils/media-queries";
 export const StyledTechnoPrevSlide = styled.div`
 
 display: none;
-width: 100%;
+width: 90%;
+gap: 16px;
 
 @media ${device.tablet} {
  display: grid;
@@ -24,6 +25,7 @@ width: 100%;
 export const StyledTechnoNextSlide = styled.div`
 
 display: none;
+gap: 16px;
 
 @media ${device.tablet} {
 

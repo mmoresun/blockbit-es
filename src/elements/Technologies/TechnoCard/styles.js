@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { device } from "../../../utils/media-queries";
 
 const StyledTechnoCard = styled.div`
+ text-align: center;
  display: flex;
  flex-direction: column;
  -webkit-box-pack: center;
@@ -14,6 +15,8 @@ const StyledTechnoCard = styled.div`
  border-radius: 15px;
  background-color: rgb(255, 255, 255);
  box-shadow: rgb(0 0 0 / 4%) 0px 10px 17px 0px;
+ align-self: center;
+ justify-self: center;
 
  @media ${device.laptop} {
  width: 115px;
