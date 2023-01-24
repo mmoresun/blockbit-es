@@ -11,14 +11,13 @@ import StyledBtn from './styles.js';
 // <Button buttonSize="small" enabled>Button text</Button> 
 
 const Button = (props) => {
-
-
     return (
         <StyledBtn
             buttonSize={props.buttonSize}
             enabled={props.enabled}                     
             type={props.type} 
-            headerButton={props.headerButton}           
+            headerButton={props.headerButton}
+            bannerButton={props.bannerButton}           
         >
             {props.children}
         </StyledBtn>
