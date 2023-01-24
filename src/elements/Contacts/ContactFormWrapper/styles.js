@@ -9,10 +9,9 @@ const StyledContactFormWrapper = styled.div`
     -webkit-box-pack: justify;
     justify-content: space-between;
 
-    @media ${device.desktop} {
+    @media ${device.laptop} {
      flex-direction: column;
      gap: 40px;
   }
-
-`;
+  `;
 export default StyledContactFormWrapper;
