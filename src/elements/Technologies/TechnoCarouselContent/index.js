@@ -1,33 +1,52 @@
 import React from 'react';
 
+import { technoCardData } from '../../../data/technocard-data';
+
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 import TechnoCard from '../TechnoCard';
+import P from '../../../smalls/P';
+import TechIMG from '../../../smalls/IMG/styles';
 import { StyledTechnoPrevSlide, StyledTechnoNextSlide } from './styles';
 
 const TechnoCarouselContent = () => {
+
+    // array of first six "Technologies" cards (for the first slide)
+    const firstSixCardsArr = technoCardData.slice(0, 6);
+
+    // array of other "Technologies" cards (for the second slide)
+    const lastCardsArr = technoCardData.slice(6, technoCardData.length + 1);
+
     return (
         <Carousel
+        // carousel settings: https://www.npmjs.com/package/react-responsive-carousel
             showStatus={false}
             showArrows={false}
             showThumbs={false}
         >
-            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
+            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                 <StyledTechnoPrevSlide>
-                    <TechnoCard>Card 1</TechnoCard>
-                    <TechnoCard>Card 2</TechnoCard>
-                    <TechnoCard>Card 3</TechnoCard>
-                    <TechnoCard>Card 4</TechnoCard>
-                    <TechnoCard>Card 5</TechnoCard>
-                    <TechnoCard>Card 6</TechnoCard>
+                    {/* mapping data to the first slide*/}
+                    {firstSixCardsArr.map(elem => {
+                        return <TechnoCard
+                            key={elem.id}>
+                            <TechIMG src={elem.image} alt="" rel="noreferrer" />
+                            <P pColor="blue" small>{elem.title}</P>
+                        </TechnoCard>
+                    })}
                 </StyledTechnoPrevSlide>
             </div>
 
             <StyledTechnoNextSlide>
-                <TechnoCard>Card 7</TechnoCard>
-                <TechnoCard>Card 8</TechnoCard>
-                <TechnoCard>Card 9</TechnoCard>
-                <TechnoCard>Card 10</TechnoCard>
+                {/* mapping data to the second  slide*/}
+                {lastCardsArr.map(elem => {
+                    return <TechnoCard
+                        key={elem.id}>
+                        <TechIMG src={elem.image} alt="" rel="noreferrer" />
+                        <P pColor="blue" small>{elem.title}</P>
+                    </TechnoCard>
+                })}
             </StyledTechnoNextSlide>
         </Carousel>
     );

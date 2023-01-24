@@ -3,6 +3,7 @@ import React from 'react';
 import { StyledCardsWrapper } from './styled';
 import TechnoCard from '../TechnoCard';
 import P from '../../../smalls/P';
+import TechIMG from '../../../smalls/IMG/styles';
 
 import { technoCardData } from '../../../data/technocard-data';
 
@@ -14,8 +15,8 @@ const TechnoStaticContent = () => {
                 {technoCardData.map(elem => {
                     return <TechnoCard
                         key={elem.id}>
-                        <img src={elem.image} alt="" rel="noreferrer" style={{ width: '60px', marginBottom: '16px' }} />
-                        <P pColor="blue">{elem.title}</P>
+                        <TechIMG src={elem.image} alt="" rel="noreferrer" />
+                        <P pColor="blue" small>{elem.title}</P>
                     </TechnoCard>
                 })}
             </StyledCardsWrapper>

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { device } from "../../utils/media-queries";
+
 const StyledP = styled.p`
 
 /* P text color settings: red by default (it means error), white (#FFFFFF) and grey (#6E778C) set by user in props */
@@ -16,7 +18,12 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 padding: 0 0 1px;
+
+@media ${device.mobile} {
+font-size: ${props => props.small && "13px"};
+}
 `;
+
 
 export default StyledP;
 
