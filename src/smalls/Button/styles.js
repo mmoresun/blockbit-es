@@ -19,6 +19,9 @@ border-radius: 30px;
 cursor: pointer;
 display: inline-block;
 
+/* if button uses in banner block, it have to be 100% wide*/
+
+max-width: ${props => props.bannerButton && '100%'};
 
 /* button text format settings */
 font-weight: 700;
@@ -36,7 +39,6 @@ transition: all 0.25s ease 0s;
 	max-width: ${props => props.headerButton ? "190px": "none" };
     height: 48px;
   }
-
 `;
 
 export default StyledBtn;

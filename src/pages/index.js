@@ -6,13 +6,15 @@ import Layout from './layout'
 import Introduction from '../elements/Introduction'
 import Attributes from '../elements/Attributes'
 import Technologies from '../elements/Technologies'
+import Banner from '../elements/Banner'
 
 const IndexPage = () => {
 
   return (
-    <Layout 
-    pageTitle="Home Page"
-    >      
+    <Layout
+      pageTitle="Home Page"
+    >
+      <Banner />
       <Introduction />
       <Attributes />
       <Technologies />
