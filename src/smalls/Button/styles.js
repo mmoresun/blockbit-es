@@ -2,22 +2,26 @@ import styled from "styled-components";
 
 import { device } from "../../utils/media-queries";
 
-const StyledBtn = styled.button`
+const StyledBtn = styled.a`
 /* button height settings: is button calls with "big" or "small" prop */
-height: ${props => props.buttonSize === "big" && "122px"};
+height: ${props => props.buttonSize === "big" && "112px"};
 height: ${props => props.buttonSize === "small" && "48px"};
 
 /* text color when button is enabled and disabled */
 color: ${props => props.enabled ? "#2982E2" : "#6E778C"};
 
 /* other button settings */
+display: flex; 
+align-items: center;
+justify-content: center;
 border: none;
 width: 100%;
 max-width: 190px;
 background: #FFFFFF;
 border-radius: 30px;
+border-radius: ${props => props.buttonSize === "big" && "60px"};
+
 cursor: pointer;
-display: inline-block;
 
 /* if button uses in banner block, it have to be 100% wide*/
 
@@ -37,8 +41,8 @@ transition: all 0.25s ease 0s;
 
 @media ${device.mobile} {
 	max-width: ${props => props.headerButton ? "190px": "none" };
-    height: 48px;
-  }
+ height: 48px;
+ }
 `;
 
 export default StyledBtn;

@@ -12,7 +12,7 @@ const Banner = () => {
     return (
         <StyledBanner>
             <BannerContentWrapper>
-                <div><Animation /></div>
+                <Animation />
                 <BannerTextWrapper>
                     <H1>
                         Design.
