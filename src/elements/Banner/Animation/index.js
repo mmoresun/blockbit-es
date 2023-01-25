@@ -8,9 +8,11 @@ import StyledAnimation from './styles';
 function Animation() {
 
     return (
-        <StyledAnimation>            
-                <Lottie animationData={rectanglesMoving} />            
-        </StyledAnimation>
+        <div>
+            <StyledAnimation>
+                <Lottie animationData={rectanglesMoving} />
+            </StyledAnimation>
+        </div>
     );
 
 };

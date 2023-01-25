@@ -7,6 +7,7 @@ import Introduction from '../elements/Introduction'
 import Attributes from '../elements/Attributes'
 import Technologies from '../elements/Technologies'
 import Banner from '../elements/Banner'
+import Dicsuss from '../elements/Discuss'
 
 const IndexPage = () => {
 
@@ -18,6 +19,7 @@ const IndexPage = () => {
       <Introduction />
       <Attributes />
       <Technologies />
+      <Dicsuss />
     </Layout>
   )
 }
