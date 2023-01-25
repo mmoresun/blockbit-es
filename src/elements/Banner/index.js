@@ -2,7 +2,7 @@ import React from 'react';
 
 import StyledBanner from './styles';
 import BannerContentWrapper from './BannerContentWrapper';
-import Animation from '../../mediums/Animation';
+import Animation from './Animation';
 import BannerTextWrapper from './BannerTextWrapper';
 import H1 from '../../smalls/H1';
 import P from '../../smalls/P';
@@ -12,7 +12,7 @@ const Banner = () => {
     return (
         <StyledBanner>
             <BannerContentWrapper>
-                <Animation />                
+                <div><Animation /></div>
                 <BannerTextWrapper>
                     <H1>
                         Design.
@@ -24,7 +24,7 @@ const Banner = () => {
                     <P pColor="white" pMargin="48px 0px 60px">
                         Leverage your business`s growth potential with us, using Blockchain, Cloud, and cutting-edge technologies.
                     </P>
-                    <Button buttonSize="small" enabled bannerButton>Explore Our Work</Button> 
+                    <Button buttonSize="small" enabled bannerButton>Explore Our Work</Button>
                 </BannerTextWrapper>
             </BannerContentWrapper>
         </StyledBanner>

@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 const StyledLayout = styled.div`
+  outline: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   box-sizing: border-box;  
-  width: 100%;
+  
+  /* width: 100%;
   overflow-x: hidden;
-  height: 100vh;
-  /* border: 2px solid red; */
+  height: auto;  */  
 `;
 export default StyledLayout;
