@@ -23,7 +23,7 @@ const StyledIntroduction = styled.div`
     padding: 60px 48px;
  }
 
- @media ${device.tablet} {
+ @media ${device.mobile} {
     padding: 60px 20px;
  }
 

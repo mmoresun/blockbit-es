@@ -9,6 +9,10 @@ const StyledLottieWrapper = styled.div`
         width: 100%;
     }
 
+    @media ${device.tablet} {
+        width: 50%;
+    }
+
     @media ${device.mobile} {
         width: 0px;
     }

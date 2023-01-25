@@ -7,7 +7,7 @@ import StyledH3 from './styles';
 
 const H3 = (props) => {
     return (
-        <StyledH3 h3Color={props.h3Color}>
+        <StyledH3 h3Color={props.h3Color} type={props.type}>
             {props.children}
         </StyledH3>
     );

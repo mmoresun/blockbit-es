@@ -6,7 +6,7 @@ import Animation from './Animation';
 import BannerTextWrapper from './BannerTextWrapper';
 import H1 from '../../smalls/H1';
 import P from '../../smalls/P';
-import Button from '../../smalls/Button';
+import LinkButton from '../../smalls/LinkButton';
 
 const Banner = () => {
     return (
@@ -15,16 +15,16 @@ const Banner = () => {
                 <Animation />
                 <BannerTextWrapper>
                     <H1>
-                        Design.
+                        Design.                        
                         <br />
-                        Build.
+                        Build.                        
                         <br />
                         Grow.
                     </H1>
-                    <P pColor="white" pMargin="48px 0px 60px">
+                    <P pColor="white" pMargin="48px 0px 60px" high>
                         Leverage your business`s growth potential with us, using Blockchain, Cloud, and cutting-edge technologies.
                     </P>
-                    <Button buttonSize="small" enabled bannerButton>Explore Our Work</Button>
+                    <LinkButton type="bannerButton">Explore Our Work</LinkButton>
                 </BannerTextWrapper>
             </BannerContentWrapper>
         </StyledBanner>
