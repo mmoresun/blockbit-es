@@ -22,6 +22,8 @@ line-height: ${props => props.high && '150%'};
 
 @media ${device.mobile} {
 font-size: ${props => props.small && "13px"};
+margin: ${props => props.high && '24px 0px 80px'};
+max-width: ${props => props.high && '215px'};
 }
 `;
 

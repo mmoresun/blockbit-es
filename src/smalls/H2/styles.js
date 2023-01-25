@@ -41,9 +41,11 @@ line-height: 120%;
  content: "";
  /* if underline is not set, hide ::after element */
  display: ${props => !props.underline && "none"};
-}
+
+ @media ${device.mobile}
+ {width: 43px;
+ height: 2px;};
+};
 `;
-
-
 
 export default StyledH2;
