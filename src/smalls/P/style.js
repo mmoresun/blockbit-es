@@ -18,7 +18,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 padding: 0 0 1px;
-line-height: ${props => props.high && '150%'};
+line-height: ${props => props.high && '151%'};
 
 @media ${device.mobile} {
 font-size: ${props => props.small && "13px"};
