@@ -34,7 +34,11 @@ export const CollabContentWrapper = styled.div`
  display: flex;
  -webkit-box-pack: justify;
  justify-content: space-between;
+ 
+ @media ${device.laptop} {
  gap: 40px;
+ }
+
 `;
 
 export const CollabColumnWrapper = styled.div`
