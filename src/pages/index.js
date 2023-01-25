@@ -8,6 +8,7 @@ import Attributes from '../elements/Attributes'
 import Technologies from '../elements/Technologies'
 import Banner from '../elements/Banner'
 import Dicsuss from '../elements/Discuss'
+import Collab from '../elements/Collab'
 
 const IndexPage = () => {
 
@@ -19,7 +20,8 @@ const IndexPage = () => {
       <Introduction />
       <Attributes />
       <Technologies />
-      <Dicsuss />
+      <Dicsuss /> 
+      <Collab />
     </Layout>
   )
 }

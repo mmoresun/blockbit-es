@@ -5,7 +5,7 @@ import InputsWrapper from './InputsWrapper';
 import Input from '../../smalls/Input';
 import TextArea from '../../smalls/TextArea';
 import Toggler from '../../smalls/Toggler'
-import Button from '../../smalls/Button';
+import SubmitButton from '../../smalls/SubmitButton';
 
 const ContactForm = () => {
 
@@ -21,13 +21,12 @@ const ContactForm = () => {
             </InputsWrapper>
             <TextArea placeholder="Message..." />
             <Toggler text="Send me NDA" />
-            <Button                                
-                buttonSize="small"
-                enabled={false}
+            <SubmitButton                                
+                enabled={true}
                 onClick={(e) => e.preventDefault()}                            
             >
                 Submit
-            </Button>
+            </SubmitButton>
         </StyledContactForm >
     );
 }

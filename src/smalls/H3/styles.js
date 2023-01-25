@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../utils/media-queries";
 
 const StyledH3 = styled.h3`
 
@@ -15,5 +16,10 @@ font-style: normal;
 font-weight: 700;
 font-size: 32px;
 line-height: 120%;
+
+@media ${device.laptop} {    
+font-size: ${props => props.type === 'collab' && '24px'};
+line-height: ${props => props.type === 'collab' && '150%'};
+}
 `;
 export default StyledH3;

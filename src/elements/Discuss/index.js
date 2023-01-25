@@ -6,7 +6,7 @@ import {
     StyledDiscussTitleWrapper
 } from './styles';
 import H2 from '../../smalls/H2';
-import Button from '../../smalls/Button';
+import LinkButton from '../../smalls/LinkButton';
 
 const Dicsuss = () => {
     return (
@@ -18,9 +18,9 @@ const Dicsuss = () => {
                             Want to discuss your project?
                         </H2>
                     </StyledDiscussTitleWrapper>
-                    <Button buttonSize="big">
+                    <LinkButton type="discussButton">
                         Contact us
-                    </Button>
+                    </LinkButton>
                 </StyledDiscussContentWrapper>
             </StyledDiscuss>
         </>
