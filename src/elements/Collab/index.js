@@ -14,7 +14,7 @@ const Index = () => {
                     <H3 h3Color="blue" type="collab">
                         We work in collaboration with Defdone.com
                     </H3>
-                    <P pColor="grey" pMargin="16px 0 0 0" high>
+                    <P pColor="grey" pMargin="16px 0 0 0" high={true}>
                         We provide comprehensive product expertise because, in addition to our team, we also cooperate closely with Defdone.com.
                     </P>
                     <LinkButton type="collabButton">See More</LinkButton>
