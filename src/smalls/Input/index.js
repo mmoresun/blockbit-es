@@ -7,7 +7,13 @@ import StyledInput from './styles';
 
 const Input = (props) => {
     return (
-        <StyledInput placeholder={props.placeholder} onChange={props.onChange} type={props.type}>
+        <StyledInput
+            placeholder={props.placeholder}
+            onChange={props.onChange}
+            type={props.type}
+            value={props.value}
+            name={props.name}
+        >
             {props.children}
         </StyledInput>
     );
