@@ -8,7 +8,7 @@ import StyledH2 from './styles';
 
 const H2 = (props) => {
     return (
-        <StyledH2 h2Color={props.h2Color} underline={props.underline}>
+        <StyledH2 h2Color={props.h2Color} underline={props.underline} type={props.type}>
            {props.children} 
         </StyledH2>
     );

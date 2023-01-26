@@ -35,8 +35,14 @@ export const WorkflowContentWrapper = styled.div`
  padding: 0px 48px;
  }
 
+ @media ${device.tablet} {    
+    text-align: center;
+ }
+
  @media ${device.mobile} {
  padding: 0px 20px;
+ text-align: center;
+ max-width: 260px;
  }
 `;
 

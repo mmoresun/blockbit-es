@@ -18,8 +18,18 @@ font-size: 32px;
 line-height: 120%;
 
 @media ${device.laptop} {    
-font-size: ${props => props.type === 'collab' && '24px'};
+font-size: ${props => props.type === 'collab' && '18px'};
 line-height: ${props => props.type === 'collab' && '150%'};
+}
+
+@media ${device.tablet} {
+    font-size: ${props => props.type === 'collab' && '24px'};
+    line-height: ${props => props.type === 'collab' && '150%'};
+}
+
+@media ${device.mobile} {
+    font-size: ${props => props.type === 'collab' && '18px'};
+    line-height: ${props => props.type === 'collab' && '150%'};
 }
 `;
 export default StyledH3;
