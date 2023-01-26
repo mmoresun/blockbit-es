@@ -1,8 +1,8 @@
 
-import globe from '../../../images/workflow-pics/globe.svg';
-import consulting from '../../../images/workflow-pics/consulting.svg';
-import contract from '../../../images/workflow-pics/contract.svg';
-import puzzle from '../../../images/workflow-pics/puzzle.svg';
+import globe from '../images/workflow-pics/globe.svg';
+import consulting from '../images/workflow-pics/consulting.svg';
+import contract from '../images/workflow-pics/contract.svg';
+import puzzle from '../images/workflow-pics/puzzle.svg';
 
 export const cardRenderData = [
     {

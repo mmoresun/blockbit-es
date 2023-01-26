@@ -4,7 +4,7 @@ import ButtonsBlock from './ButtonsBlock';
 import Card from './Card';
 import { CardsContainer } from './styles';
 
-import { cardRenderData } from './data/cardRenderData';
+import { cardRenderData } from '../../data/cardRenderData';
 
 const CardRender = () => {
 

@@ -12,18 +12,18 @@ const ContactForm = () => {
     return (
         <StyledContactForm onSubmit={(e) => e.preventDefault()} >
             <InputsWrapper>
-                <Input placeholder="Full name" />
-                <Input placeholder="Company (optional)" />
+                <Input placeholder="Full name" type="text" />
+                <Input placeholder="Company (optional)" type="text" />
             </InputsWrapper>
             <InputsWrapper>
-                <Input placeholder="Email address" />
-                <Input placeholder="Phone number (optional)" />
+                <Input placeholder="Email address" type="text" />
+                <Input placeholder="Phone number (optional)" type="number" />
             </InputsWrapper>
             <TextArea placeholder="Message..." />
             <Toggler text="Send me NDA" />
-            <SubmitButton                                
-                enabled={true}
-                onClick={(e) => e.preventDefault()}                            
+            <SubmitButton
+                enabled={false}
+                onClick={(e) => e.preventDefault()}
             >
                 Submit
             </SubmitButton>

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 import { device } from "../../utils/media-queries";
 
 const StyledLinkButton = styled.a`
@@ -45,6 +44,11 @@ const StyledLinkButton = styled.a`
  width: ${props => props.type === 'collabButton' && '100%'};
  max-width: ${props => props.type === 'collabButton' && 'none'};
 }
+
+:hover {
+ color: rgb(26, 103, 187);
+}
+
 `;
 
 export default StyledLinkButton;

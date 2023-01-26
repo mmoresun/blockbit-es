@@ -24,5 +24,9 @@ const StyledSubmitButton = styled.button`
  max-width: none;
  height: 48px;
 }
+
+:hover {
+ color: ${props => props.enabled && 'rgb(26, 103, 187)'}
+}
 `;
 export default StyledSubmitButton;

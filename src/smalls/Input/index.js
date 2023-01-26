@@ -7,7 +7,7 @@ import StyledInput from './styles';
 
 const Input = (props) => {
     return (
-        <StyledInput placeholder={props.placeholder}>
+        <StyledInput placeholder={props.placeholder} onChange={props.onChange} type={props.type}>
             {props.children}
         </StyledInput>
     );
