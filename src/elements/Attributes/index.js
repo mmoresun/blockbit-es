@@ -9,7 +9,7 @@ import AttributesGrid from './AttributesGrid';
 import AttributesCard from './AttributesCard'
 import AttrCardTextWrapper from './AttrCardTextWrapper';
 import H4 from '../../smalls/H4';
-import P from '../../smalls/P';
+import Paragraph from '../../smalls/Paragraph';
 
 // import images
 import winnerPic from '../../images/attributes-pics/winner.svg'
@@ -34,28 +34,28 @@ const Attributes = () => {
                         <img src={winnerPic} alt="" rel="noreferrer" />
                         <AttrCardTextWrapper>
                             <H4>A robust partner for emerging projects</H4>
-                            <P pColor="grey">With a deep practial knowledge of buidling startups from scratch, we've learned the hard way what are the challenges involved. This results in both technical excellence but also strong support on the management side.</P>
+                            <Paragraph type="attribute">With a deep practial knowledge of buidling startups from scratch, we've learned the hard way what are the challenges involved. This results in both technical excellence but also strong support on the management side.</Paragraph>
                         </AttrCardTextWrapper>
                     </AttributesCard>
                     <AttributesCard>
                         <img src={filePic} alt="" rel="noreferrer" />
                         <AttrCardTextWrapper>
                             <H4>Expertise in building high performant teams </H4>
-                            <P pColor="grey">Remote first, hybrid work friendly. We can help you build your team right, right from the start. Talk to us and see what are your options to get where you want to be.</P>
+                            <Paragraph type="attribute">Remote first, hybrid work friendly. We can help you build your team right, right from the start. Talk to us and see what are your options to get where you want to be.</Paragraph>
                         </AttrCardTextWrapper>
                     </AttributesCard>
                     <AttributesCard>
                         <img src={rocketPic} alt="" rel="noreferrer" />
                         <AttrCardTextWrapper>
                             <H4>Creation of innovative solutions</H4>
-                            <P pColor="grey">In this fast paced environemnt we feel as natural as it gets. We are always on top of the technology landscape experimenting with new things and building using the best rock-solid solutions. </P>
+                            <Paragraph type="attribute">In this fast paced environemnt we feel as natural as it gets. We are always on top of the technology landscape experimenting with new things and building using the best rock-solid solutions. </Paragraph>
                         </AttrCardTextWrapper>
                     </AttributesCard>
                     <AttributesCard>
                         <img src={folderPic} alt="" rel="noreferrer" />
                         <AttrCardTextWrapper>
                             <H4>Perfect partner for your business </H4>
-                            <P pColor="grey"> The reputation is our key value. With that in mind, we alway strive for loyality and consistency with our customers. The greatest reward is when there coming back tu us for more.</P>
+                            <Paragraph type="attribute"> The reputation is our key value. With that in mind, we alway strive for loyality and consistency with our customers. The greatest reward is when there coming back tu us for more.</Paragraph>
                         </AttrCardTextWrapper>
                     </AttributesCard>
                 </AttributesGrid>

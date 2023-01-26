@@ -12,6 +12,7 @@ const P = (props) => {
             {props.children}
         </StyledP>
     );
-}
-
+};
 export default P;
+
+

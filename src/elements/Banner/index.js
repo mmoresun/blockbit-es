@@ -5,8 +5,9 @@ import BannerContentWrapper from './BannerContentWrapper';
 import Animation from './Animation';
 import BannerTextWrapper from './BannerTextWrapper';
 import H1 from '../../smalls/H1';
-import P from '../../smalls/P';
 import LinkButton from '../../smalls/LinkButton';
+
+import Paragraph from '../../smalls/Paragraph';
 
 const Banner = () => {
     return (
@@ -21,9 +22,9 @@ const Banner = () => {
                         <br />
                         Grow.
                     </H1>
-                    <P pColor="white" pMargin="48px 0px 60px" high>
+                    <Paragraph type="banner">
                         Leverage your business`s growth potential with us, using Blockchain, Cloud, and cutting-edge technologies.
-                    </P>
+                    </Paragraph>
                     <LinkButton type="bannerButton">Explore Our Work</LinkButton>
                 </BannerTextWrapper>
             </BannerContentWrapper>
