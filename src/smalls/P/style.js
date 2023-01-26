@@ -17,15 +17,14 @@ margin: ${props => props.pMargin};
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
-line-height: ${props => props.high && '150%'};
+line-height: ${props => props.high === true && '150%'};
 
 @media ${device.mobile} {
 font-size: ${props => props.small && "13px"};
-margin: ${props => props.high && '24px 0px 80px'};
-max-width: ${props => props.high && '215px'};
+margin: ${props => props.high === true && '24px 0px 80px'};
+max-width: ${props => props.high === true && '215px'};
 }
 `;
-
 
 export default StyledP;
 

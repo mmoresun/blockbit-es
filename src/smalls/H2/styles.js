@@ -32,12 +32,14 @@ line-height: 120%;
  position: relative;
  top: 16px;
  left: ${props => props.underline === "left" && "0px"};
- right: ${props => props.underline === "center" && "calc(50% - 95px)"};
- width: 100px;
+ left: ${props => props.underline === "center" && "calc(50% - 95px)"};
+ width: 190px;
  height: 2px;
  background-color: rgb(0, 255, 202);
  display: block;
  margin-bottom: 80px;
+ /* we need 40px margin-bottom at workflow block, so we have to add this value */
+ margin-bottom: ${props => props.underline === "center" && "40px"};
  content: "";
  /* if underline is not set, hide ::after element */
  display: ${props => !props.underline && "none"};
