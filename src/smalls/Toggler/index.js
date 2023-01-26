@@ -3,14 +3,15 @@ import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
-import P from '../P';
+import TogglerWrapper from './styles';
 
 const IOSSwitch = styled((props) => (
   <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
 ))(({ theme }) => ({
   width: 41,
-  height: 22,  
+  height: 22,
   padding: 0,
+  margin: 0,
   '& .MuiSwitch-switchBase': {
     padding: 0,
     margin: 2,
@@ -19,7 +20,7 @@ const IOSSwitch = styled((props) => (
       transform: 'translateX(19px)',
       color: '#fff',
       '& + .MuiSwitch-track': {
-        backgroundColor: theme.palette.mode === 'dark' ? '#2ECA45' : '#2982E2',        
+        backgroundColor: theme.palette.mode === 'dark' ? '#2ECA45' : '#2982E2',
         opacity: 1,
         border: '1px solid rgb(255, 255, 255)',
         borderRadius: '20px'
@@ -59,11 +60,13 @@ const IOSSwitch = styled((props) => (
 
 export default function Toggler(props) {
   return (
-    <FormGroup style={{display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '10px', margin: '0 0 0 5px'}}>
-      <FormControlLabel
-        control={<IOSSwitch sx={{ m: 1 }} defaultChecked />}                
-      />
-      <P pColor="white">{props.text}</P>
-    </FormGroup>
+    <TogglerWrapper>
+      <FormGroup style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', margin: '0 0 0 8px' }}>
+        <FormControlLabel
+          control={<IOSSwitch sx={{ m: 1 }} defaultChecked />}
+        />
+        <p style={{color: 'white'}}>{props.text}</p>
+      </FormGroup>
+    </TogglerWrapper>
   );
 }

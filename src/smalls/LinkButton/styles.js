@@ -35,8 +35,7 @@ const StyledLinkButton = styled.a`
  align-self: ${props => props.type === 'bannerButton' && 'flex-end'};
 
 @media ${device.tablet} {
- display: ${props => props.type === 'projectsButton' && 'none'};
- /* max-width: ${props => props.type === 'bannerButton' && '400px'}; */
+ display: ${props => props.type === 'projectsButton' && 'none'}; 
  display: ${props => props.type === 'headerButton' && 'none'};
 }
 

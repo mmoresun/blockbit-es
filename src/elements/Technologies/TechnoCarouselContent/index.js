@@ -6,7 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import TechnoCard from '../TechnoCard';
-import P from '../../../smalls/P';
+import Paragraph from '../../../smalls/Paragraph';
 import TechIMG from '../../../smalls/IMG/styles';
 import { StyledTechnoPrevSlide, StyledTechnoNextSlide } from './styles';
 
@@ -32,7 +32,7 @@ const TechnoCarouselContent = () => {
                         return <TechnoCard
                             key={elem.id}>
                             <TechIMG src={elem.image} alt="" rel="noreferrer" />
-                            <P pColor="blue" small>{elem.title}</P>
+                            <Paragraph type="techno">{elem.title}</Paragraph>
                         </TechnoCard>
                     })}
                 </StyledTechnoPrevSlide>
@@ -44,7 +44,7 @@ const TechnoCarouselContent = () => {
                     return <TechnoCard
                         key={elem.id}>
                         <TechIMG src={elem.image} alt="" rel="noreferrer" />
-                        <P pColor="blue" small>{elem.title}</P>
+                        <Paragraph type="techno">{elem.title}</Paragraph>
                     </TechnoCard>
                 })}
             </StyledTechnoNextSlide>

@@ -4,16 +4,15 @@ import { device } from "../../utils/media-queries";
 
 const TechIMG = styled.img`
  height: auto;
- width: 60px !important;
- margin-bottom: 16px;
+ width: 60px !important; 
 
 @media ${device.laptop} {
- width: 45px !important;
+ height: 45px !important; 
 }
 
 @media ${device.mobile} {
  width: 40px !important;
- margin-bottom: 8px;
+ margin-bottom: -1px;
 }
 
 `;
