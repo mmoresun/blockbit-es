@@ -32,19 +32,19 @@ const Header = () => {
     }, [])
 
     return (        
-            <StyledHeader isScrolled={isScrolled}>
-                <HeaderWrapper>
-                    <HeaderContentWrapper>
-                        <HeaderLinkWrapper>
-                            <Link to="/"><StyledHeaderLogoWrapper src={headerLogo} alt="" /></Link>
-                            <StyledHeaderLink to="#">Services</StyledHeaderLink>
-                            <StyledHeaderLink to="/projects">Projects</StyledHeaderLink>
-                            <StyledHeaderLink to="#">Solutions</StyledHeaderLink>
-                        </HeaderLinkWrapper>
-                        <LinkButton type="headerButton">Contact Us</LinkButton>
-                    </HeaderContentWrapper>
-                </HeaderWrapper>
-            </StyledHeader>        
+        <StyledHeader isScrolled={isScrolled}>
+            <HeaderWrapper>
+                <HeaderContentWrapper>
+                    <HeaderLinkWrapper>
+                        <Link to="/"><StyledHeaderLogoWrapper src={headerLogo} alt="" /></Link>
+                        <StyledHeaderLink to="#">Services</StyledHeaderLink>
+                        <StyledHeaderLink to="/projects">Projects</StyledHeaderLink>
+                        <StyledHeaderLink to="#">Solutions</StyledHeaderLink>
+                    </HeaderLinkWrapper>
+                    <LinkButton type="headerButton">Contact Us</LinkButton>
+                </HeaderContentWrapper>
+            </HeaderWrapper>                
+        </StyledHeader>   
     );
 }
 

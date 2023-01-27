@@ -36,6 +36,7 @@ const StyledLinkButton = styled.a`
 @media ${device.tablet} {
  display: ${props => props.type === 'projectsButton' && 'none'}; 
  display: ${props => props.type === 'headerButton' && 'none'};
+ max-width: ${props => props.type === 'bannerBurgerButton' && '160px'};
 }
 
 @media ${device.mobile} {

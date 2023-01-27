@@ -17,3 +17,4 @@ const StyledHeader = styled.header`
  top: 0;   
 `;
 export default StyledHeader;
+
