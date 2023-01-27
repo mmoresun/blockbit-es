@@ -1,11 +1,27 @@
 // Step 1: Import React
 import * as React from 'react'
-import Layout from '../layout'
 
-const Projects = () => {
+import Layout from '../layout'
+import { MyProjectsWrapper, MyProjectLink } from '../../elements/ProjectsBanner/styles'
+
+import ProjectsBanner from '../../elements/ProjectsBanner'
+
+const Projects = () => {       
+
     return (
         <Layout pageTitle="Our Projects">
-            <p>Hi there! Here you can see our projects.</p>            
+            <ProjectsBanner />
+            <MyProjectsWrapper>
+                <MyProjectLink>
+                    Project 1
+                </MyProjectLink>
+                <MyProjectLink>
+                    Project 2
+                </MyProjectLink>
+                <MyProjectLink>
+                    Project 2
+                </MyProjectLink>
+            </MyProjectsWrapper>
         </Layout>
     )
 }
