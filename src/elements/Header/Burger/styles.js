@@ -13,6 +13,16 @@ export const BurgerIMG = styled.img`
  width: 101px;
 `;
 
+export const BurgerHeaderCanvas = styled.div`
+width: 100%;
+min-height: 51px;
+position: fixed;
+top: 0;
+left: 0;
+background-color: ${props => props.isScrolled ? 'rgb(41, 130, 226)' : 'transparent'};
+transition: all 0.5s ease 0s;
+`;
+
 export const BurgerLinkWrapper = styled(Link)`
 
 @media ${device.tablet}{
