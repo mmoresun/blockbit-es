@@ -18,8 +18,9 @@ font-size: 32px;
 line-height: 120%;
 
 @media ${device.laptop} {    
-font-size: ${props => props.type === 'collab' && '18px'};
+font-size: ${props => props.type === 'collab' && '24px'};
 line-height: ${props => props.type === 'collab' && '150%'};
+
 }
 
 @media ${device.tablet} {

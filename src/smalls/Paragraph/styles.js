@@ -15,12 +15,21 @@ margin: ${props => props.type === 'workflow' && '80px 0 0 0'};
 margin: ${props => props.type === 'collab' && '16px 0 0 0'};
 margin: ${props => props.type === 'techno' && '16px 0 0 0'}; 
 margin: ${props => props.type === 'intro' && '0 0 0 0'}; 
+margin: ${props => props.type === 'attribute' && '0 0 0 0'};
+
+@media ${device.desktop} {
+margin: ${props => props.type === 'attribute' && '0 0 0 0'};
+}
 
 /* margin: 16px 0 0 0;
 margin: ${props => props.type === 'banner' && '48px 0px 60px'};
 margin: ${props => props.type === 'workflow' && '80px 0 0 0'};
 margin: ${props => props.type === 'intro' && '0'};
 margin: ${props => props.type === 'techno' && '0'}; */
+
+@media ${device.laptop} {
+margin: ${props => props.type === 'attribute' && '0 0 0 0'};;
+}
 
 max-width: ${props => props.type === 'workflow' && '400px'}; 
 max-width: ${props => props.type === 'intro' && '608px'}; 
@@ -34,6 +43,7 @@ max-width: ${props => props.type === 'intro' && '608px'};
 }
 
 @media ${device.mobile} {        
+    
     margin: ${props => props.type === 'banner' && '24px 0px 80px'};
     margin ${props => props.type === 'techno' && '8px 0 0 0'};
     max-width: ${props => props.type === 'banner' && '215px'};
