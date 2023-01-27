@@ -42,7 +42,7 @@ export const WorkflowContentWrapper = styled.div`
  @media ${device.mobile} {
  padding: 0px 20px;
  text-align: center;
- max-width: 260px;
+ max-width: 350px;
  }
 `;
 

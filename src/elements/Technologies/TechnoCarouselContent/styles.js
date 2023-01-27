@@ -5,7 +5,7 @@ import { device } from "../../../utils/media-queries";
 export const StyledTechnoPrevSlide = styled.div`
 
 display: none;
-width: 90%;
+width: 100%;
 gap: 16px;
 
 @media ${device.tablet} {

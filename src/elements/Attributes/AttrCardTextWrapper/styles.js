@@ -11,6 +11,7 @@ const StyledAttrCardTextWrapper = styled.div`
 
  @media ${device.mobile} {
     gap: 16px;
+    max-width: 100%;
  }
 `;
 

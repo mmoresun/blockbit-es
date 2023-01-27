@@ -8,8 +8,12 @@ font-size: 24px;
 line-height: 120%;
 color: #101820;
 
+@media ${device.tablet} {
+    max-width: 98%;
+}
+
 @media ${device.mobile} {
-    max-width: 220px;
+    max-width: 100%;
 }
 
 `;
