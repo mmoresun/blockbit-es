@@ -8,7 +8,7 @@ export const PartnersWrapper = styled.div`
  justify-content: center;
  -webkit-box-align: center;
  align-items: center;
- padding: 160px 0px;
+ padding: 150px 0px;
  font-size: 16px;
 
  @media ${device.desktop} {
