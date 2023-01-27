@@ -28,8 +28,12 @@ const TechnologiesWrapper = styled.div`
 
  @media ${device.tablet} {
     margin-bottom: 70px;
-    padding: 0px 20px;
+    padding: 0px 48px;
  }
 
+ @media ${device.mobile} {
+    margin-bottom: 70px;
+    padding: 0px 20px;
+ }
 `;
 export default TechnologiesWrapper;

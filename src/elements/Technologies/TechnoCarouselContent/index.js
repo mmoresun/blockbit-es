@@ -4,6 +4,7 @@ import { technoCardData } from '../../../data/technocard-data';
 
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import './styles.css';
 
 import TechnoCard from '../TechnoCard';
 import Paragraph from '../../../smalls/Paragraph';
@@ -20,10 +21,10 @@ const TechnoCarouselContent = () => {
 
     return (
         <Carousel
-        // carousel settings: https://www.npmjs.com/package/react-responsive-carousel
+            // carousel settings: https://www.npmjs.com/package/react-responsive-carousel
             showStatus={false}
             showArrows={false}
-            showThumbs={false}
+            showThumbs={false}            
         >
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                 <StyledTechnoPrevSlide>

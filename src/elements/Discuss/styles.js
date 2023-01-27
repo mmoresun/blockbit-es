@@ -38,7 +38,7 @@ export const StyledDiscussContentWrapper = styled.div`
  @media ${device.mobile} {
  flex-direction: column;
  padding: 32px 20px;
- gap: 32px;
+ gap: 32px; 
  }
 `;
 

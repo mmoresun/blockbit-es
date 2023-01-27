@@ -14,7 +14,7 @@ const Dicsuss = () => {
             <StyledDiscuss>
                 <StyledDiscussContentWrapper>
                     <StyledDiscussTitleWrapper>
-                        <H2 h2Color="white">
+                        <H2 h2Color="white" type='discuss'>
                             Want to discuss your project?
                         </H2>
                     </StyledDiscussTitleWrapper>

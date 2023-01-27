@@ -20,12 +20,15 @@ font-size: 54px;
 line-height: 120%;
 
 @media ${device.tablet} {
-	font-size: 42px;
+	font-size: 40px;
+	line-height: 46px;
  }
 
  @media ${device.mobile} {
- font-size: 32px;
- line-height: 38px;
+	
+	max-width: ${props => props.type === 'discuss' ? 'none' : '90%'};
+	font-size: ${props => props.type === 'discuss' ? '42px' : '32px'};
+    line-height: 110%;
  }
 
 ::after {
@@ -34,6 +37,7 @@ line-height: 120%;
  left: ${props => props.underline === "left" && "0px"};
  left: ${props => props.underline === "center" && "calc(50% - 95px)"};
  width: 190px;
+ width: ${props => props.underline === 'left' && '100px'};
  height: 2px;
  background-color: rgb(0, 255, 202);
  display: block;
@@ -45,8 +49,12 @@ line-height: 120%;
  display: ${props => !props.underline && "none"};
 
  @media ${device.mobile}
- {width: 43px;
- height: 2px;};
+ {width: 100px;
+ height: 2px;
+ left: ${props => props.underline === "left" && "0px"};
+ left: ${props => props.underline === "center" && "calc(25%)"};
+ align-self: center;
+}
 };
 `;
 
