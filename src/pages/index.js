@@ -10,6 +10,7 @@ import Banner from '../elements/Banner'
 import Dicsuss from '../elements/Discuss'
 import Collab from '../elements/Collab'
 import Workflow from '../elements/Workflow'
+import Partners from '../elements/Partners'
 
 const IndexPage = () => {
 
@@ -24,6 +25,7 @@ const IndexPage = () => {
       <Dicsuss />
       <Collab />
       <Workflow />
+      <Partners />
     </Layout>
   )
 }
