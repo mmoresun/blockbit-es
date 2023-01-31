@@ -9,6 +9,7 @@ module.exports = {
   },
   plugins: [    
     `gatsby-transformer-remark`,    
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-omni-font-loader`,
       options: {
