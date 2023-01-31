@@ -5,6 +5,7 @@ const FooterContactWrapper = styled.div`
  flex-direction: row;
  gap: 20px;
  line-height: 24px;
+ text-decoration: none;
 `;
 
 export default FooterContactWrapper;

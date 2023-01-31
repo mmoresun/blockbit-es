@@ -23,6 +23,18 @@ line-height: ${props => props.high === true && '150%'};
 font-size: ${props => props.small && "13px"};
 margin: ${props => props.high === true && '24px 0px 80px'};
 max-width: ${props => props.high === true && '215px'};
+ text-decoration-color: rgb(0, 255, 202);
+}
+
+&:hover {
+text-decoration-line: underline;
+text-decoration-color: rgb(0, 255, 202);
+}
+
+a {
+text-decoration: none;
+color: #FFFFFF;
+text-decoration-color: rgb(0, 255, 202);
 }
 `;
 

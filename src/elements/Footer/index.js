@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import StyledFooter from './styles';
 import FooterContentWrapper from './FooterContentWrapper';
@@ -54,20 +55,20 @@ const Footer = () => {
                     <FooterListTitle>
                         More
                     </FooterListTitle>
-                    <P pColor="white" pMargin="0 0 10px 0">
-                        Home
+                    <P pColor="white" pMargin="0 0 11px 0">
+                        <Link to="/">Home</Link>
                     </P>
-                    <P pColor="white" pMargin="0 0 10px 0">
-                        Projects
+                    <P pColor="white" pMargin="0 0 11px 0">
+                    <Link to="/projects">Projects</Link>
                     </P>
-                    <P pColor="white" pMargin="0 0 10px 0">
-                        Services
+                    <P pColor="white" pMargin="0 0 11px 0">
+                    <Link to="#">Services</Link>
                     </P>
-                    <P pColor="white" pMargin="0 0 10px 0">
-                        Contacts
+                    <P pColor="white" pMargin="0 0 11px 0">
+                    <Link to="#">Contacts</Link>
                     </P>
-                    <P pColor="white" pMargin="0 0 10px 0">
-                        Privacy Policies
+                    <P pColor="white" pMargin="0 0 11px 0">
+                    <Link to="#">Privacy Policies</Link>
                     </P>
                 </FooterListWrapper>
             </FooterContentWrapper>
