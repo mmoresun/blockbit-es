@@ -19,7 +19,7 @@ import folderPic from '../../images/attributes-pics/folder.svg'
 
 const Attributes = () => {
     return (
-        <StyledAttrWrapper>
+        <StyledAttrWrapper id="attributes">
             <StyledAttrContentWrapper>
                 <AttributesTitle>
                     <H2

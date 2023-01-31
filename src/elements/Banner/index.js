@@ -5,7 +5,7 @@ import BannerContentWrapper from './BannerContentWrapper';
 import Animation from './Animation';
 import BannerTextWrapper from './BannerTextWrapper';
 import H1 from '../../smalls/H1';
-import LinkButton from '../../smalls/LinkButton';
+import StyledLinkButton from '../../smalls/LinkButton/styles';
 
 import Paragraph from '../../smalls/Paragraph';
 
@@ -25,7 +25,7 @@ const Banner = () => {
                     <Paragraph type="banner">
                         Leverage your business`s growth potential with us, using Blockchain, Cloud, and cutting-edge technologies.
                     </Paragraph>
-                    <LinkButton type="bannerButton">Explore Our Work</LinkButton>
+                    <StyledLinkButton type="bannerButton" href="#attributes">Explore Our Work</StyledLinkButton>
                 </BannerTextWrapper>
             </BannerContentWrapper>
         </StyledBanner>

@@ -35,9 +35,9 @@ const Partners = () => {
                         <PartnerIMGWrapper src={near} />
                         <PartnerIMGWrapper src={defdone} />
                         <PartnerIMGWrapper src={github} />
-                        <PartnerIMGWrapper src={eggforce} />
+                        <PartnerIMGWrapper src={eggforce} id="contacts" />
                     </PartnerPicsWrapper>
-                </ScrollableLine>
+                </ScrollableLine >
             </PartnersContentWrapper>
         </PartnersWrapper>
     );

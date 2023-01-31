@@ -6,7 +6,7 @@ import StyledHeader from './styles';
 import HeaderWrapper from '../../elements/Header/HeaderWrapper';
 import HeaderContentWrapper from '../../elements/Header/HeaderContentWrapper';
 import HeaderLinkWrapper from '../../elements/Header/HeaderLinkWrapper';
-import LinkButton from '../../smalls/LinkButton';
+import StyledLinkButton from '../../smalls/LinkButton/styles';
 import StyledHeaderLogoWrapper from './HeaderLogo/styles';
 import StyledHeaderLink from './HeaderLink/styles';
 
@@ -41,7 +41,7 @@ const Header = () => {
                         <StyledHeaderLink to="/projects">Projects</StyledHeaderLink>
                         <StyledHeaderLink to="#">Solutions</StyledHeaderLink>
                     </HeaderLinkWrapper>
-                    <LinkButton type="headerButton">Contact Us</LinkButton>
+                    <StyledLinkButton type="headerButton" href="#contacts">Contact Us</StyledLinkButton>
                 </HeaderContentWrapper>
             </HeaderWrapper>                
         </StyledHeader>   

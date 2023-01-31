@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { slide as Menu } from 'react-burger-menu';
 
 import headerLogo from '../../../images/logos/Blockbit.svg';
-import LinkButton from '../../../smalls/LinkButton';
+import StyledLinkButton from '../../../smalls/LinkButton/styles';
 import {
     BurgerLogoLink,
     BurgerIMG,
@@ -34,6 +34,16 @@ const BurgerMenu = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const [isOpen, setIsOPen] = useState(false);
+
+    const handleIsOpen = () => {
+        setIsOPen(prev => !prev)
+    };
+
+    const closeSideBar = () => {
+        setIsOPen(false);
+      }
+
     return (
         <div style={{ position: 'fixed', top: '0', right: '0', display: 'flex', zIndex: '10' }}>
             <BurgerHeaderCanvas isScrolled={isScrolled}>
@@ -41,7 +51,9 @@ const BurgerMenu = () => {
             </BurgerHeaderCanvas>
             <Menu
                 right
-                isOpen={false}
+                isOpen={isOpen}
+                onOpen={handleIsOpen}
+                onClose={handleIsOpen}
                 width={'100%'}
             >
                 <BurgerContentWrapper>
@@ -51,7 +63,7 @@ const BurgerMenu = () => {
                         <BurgerLinkWrapper to="/projects">Projects</BurgerLinkWrapper>
                         <BurgerLinkWrapper to="#">Solutions</BurgerLinkWrapper>
                     </BurgerTextWrapper>
-                    <LinkButton type='bannerBurgerButton'>Contact us</LinkButton>
+                    <StyledLinkButton type="bannerBurgerButton" href="/#contacts "onClick={closeSideBar}>Contact us</StyledLinkButton>
                 </BurgerContentWrapper>
             </Menu>
         </div >

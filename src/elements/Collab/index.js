@@ -4,7 +4,7 @@ import { CollabWrapper, CollabContentWrapper, CollabColumnWrapper, CollabLogo } 
 import collabLogo from '../../images/logos/defdone.svg';
 import H3 from '../../smalls/H3';
 import Paragraph from '../../smalls/Paragraph';
-import LinkButton from '../../smalls/LinkButton';
+import StyledLinkButton from '../../smalls/LinkButton/styles';
 
 const Index = () => {
     return (
@@ -17,7 +17,7 @@ const Index = () => {
                     <Paragraph type="collab">
                         We provide comprehensive product expertise because, in addition to our team, we also cooperate closely with Defdone.com.
                     </Paragraph>
-                    <LinkButton type="collabButton">See More</LinkButton>
+                    <StyledLinkButton type="collabButton" href="https://defdone.com/" target="_blank" rel="noopener">See More</StyledLinkButton>
                 </CollabColumnWrapper>
                 <CollabLogo src={collabLogo} />
             </CollabContentWrapper>
