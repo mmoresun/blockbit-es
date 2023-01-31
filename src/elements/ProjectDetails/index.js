@@ -1,14 +1,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { useParams } from 'react-router';
 
 import Layout from '../Layout';
 
-
 const ProjectDetails = ({ data }) => {
-
-    const params = useParams();
-    console.log(params);
 
     const { html } = data.markdownRemark;
 

@@ -12,8 +12,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   }`
   )
-  console.log(data);
-
+  
   data.allMarkdownRemark.nodes.forEach(element => {
     const { url } = element.frontmatter;
     actions.createPage({
