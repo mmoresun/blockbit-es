@@ -7,6 +7,7 @@ import BurgerMenu from './Burger';
 // This component includes desktop and mobile navigation menu
 
 const FullHeader = () => {
+
     const isBurger = useMediaQuery({
         query: '(max-width: 768px)'
     })
