@@ -13,10 +13,10 @@ const Projects = ({ data }) => {
         <Layout pageTitle="Our Projects">
             <ProjectsBanner />
             <MyProjectsWrapper>
-                {nodes.map(project => {
-                    const { title, url } = project.frontmatter;
+                {nodes.map(elem => {
+                    const { title, url } = elem.frontmatter;
                     return <MyProjectLink
-                        key={project.id}
+                        key={elem.id}
                         to={`/projects/${url}`}
                     >
                         {title}
@@ -37,9 +37,10 @@ query ProjectsQuery {
         nodes {
           frontmatter {
             title
-            url
+            url            
           }
           html
+          id
         }
     }
 }`
