@@ -11,6 +11,7 @@ width: 100%;
  padding: 80px 0px;
  font-size: 16px;
  background-color: rgb(41, 130, 226);
+ scroll-margin-top: 7em;
 
  @media ${device.desktop} {
 	padding: 40px 48px;

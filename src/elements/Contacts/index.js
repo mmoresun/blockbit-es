@@ -7,7 +7,7 @@ import ContactForm from '../../mediums/ContactForm';
 
 const Contacts = () => {
     return (        
-            <StyledContacts>
+            <StyledContacts id="contacts">
                 <ContactFormWrapper>
                     <H2 h2Color="white">Contact us</H2>
                     <ContactForm />
