@@ -3,9 +3,12 @@
  */
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://blockbites.gatsbyjs.io/`,
+    title: "Blockbites test site",
+    author: `Anton Blagoveshchenskiy`
   },
-  plugins: [
+  plugins: [    
+    `gatsby-transformer-remark`,    
     {
       resolve: `gatsby-omni-font-loader`,
       options: {
@@ -19,5 +22,19 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `all-projects`,
+        path: `${__dirname}/src/all-projects`
+      }
+    }
   ]
 }

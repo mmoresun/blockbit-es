@@ -63,7 +63,8 @@ export const ProjectTitle = styled.h1`
 `;
 
 export const MyProjectsWrapper = styled.div`
-background-color: rgb(245,248,254)
+padding: 50px 0;
+background-color: rgb(245,248,254);
 width: 100%;
 min-height: 300px;
 display: flex;
@@ -78,6 +79,7 @@ color: #000000;
  font-weight: 700;
  font-size: 54px;
  line-height: 120%;
+ text-decoration: none !important; 
 
 @media ${device.tablet} {
  font-size: 40px;
