@@ -32,7 +32,7 @@ const Reviews = () => {
                         <ReviewSlideWrapper>
                             <ReviewContentWrapper
                                 key={review.id}>
-                                <ReviewIMG src={review.pic} alt="" />
+                                <ReviewIMG src={review.reviewPic} alt="" />
                                 <ReviewText>{review.text}</ReviewText>
                                 <ReviewAuthorWrapper>
                                     <ReviewAuthorText>{review.author}</ReviewAuthorText>
