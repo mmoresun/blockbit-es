@@ -2,11 +2,8 @@ import React from 'react';
 
 import { technoCardData } from '../../../data/technocard-data';
 
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import './styles.css';
-
 import TechnoCard from '../TechnoCard';
+import MyCarousel from '../../../mediums/MyCarousel'; // my custom carousel with custom dots colors
 import Paragraph from '../../../smalls/Paragraph';
 import TechIMG from '../../../smalls/IMG/styles';
 import { StyledTechnoPrevSlide, StyledTechnoNextSlide } from './styles';
@@ -20,11 +17,11 @@ const TechnoCarouselContent = () => {
     const lastCardsArr = technoCardData.slice(6, technoCardData.length + 1);
 
     return (
-        <Carousel
+        <MyCarousel
             // carousel settings: https://www.npmjs.com/package/react-responsive-carousel
             showStatus={false}
             showArrows={false}
-            showThumbs={false}            
+            showThumbs={false}
         >
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                 <StyledTechnoPrevSlide>
@@ -49,7 +46,7 @@ const TechnoCarouselContent = () => {
                     </TechnoCard>
                 })}
             </StyledTechnoNextSlide>
-        </Carousel>
+        </MyCarousel>
     );
 }
 

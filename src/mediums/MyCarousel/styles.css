@@ -1,0 +1,21 @@
+li.dot {
+    background: rgb(110, 119, 140) !important;
+    box-shadow: none !important; 
+    opacity: 1 !important;
+    border-radius: 50% !important;
+    width: 10px !important;
+    height: 10px !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    margin: 0px 3px !important;
+}
+li.dot.selected {
+    background: rgb(0, 255, 202) !important;   
+    box-shadow: none !important; 
+    border-radius: 50% !important;
+    width: 10px !important;
+    height: 10px !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    margin: 0px 3px !important;
+}
