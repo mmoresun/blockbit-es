@@ -6,17 +6,20 @@ import './styles.css';
 
 const MyCarousel = (props) => {
     return (
-        <Carousel
-            showStatus={props.showStatus}
-            showArrows={props.showArrows}
-            showThumbs={props.showThumbs}
-            autoPlay={props.autoPlay}
-            interval={props.interval}
-            transitionTime={props.transitionTime}
-            infiniteLoop={props.infiniteLoop}
-        >
-            {props.children}
-        </Carousel>
+        <div className='carousel-wrapper'>
+            <Carousel
+                showStatus={props.showStatus}
+                showArrows={props.showArrows}
+                showThumbs={props.showThumbs}
+                autoPlay={props.autoPlay}
+                interval={props.interval}
+                transitionTime={props.transitionTime}
+                infiniteLoop={props.infiniteLoop}
+                swipeable={props.swipeable}
+            >
+                {props.children}
+            </Carousel>
+        </div>
     );
 }
 
