@@ -26,9 +26,8 @@ const OurProjects = () => {
                 <OurProjectListWrapper>
                     {projectsData.map(project => {
                         return (
-
                             <div style={{ display: 'flex', flexDirection: 'column' }}>
-                                <A href={project.projectURL}><ProjectIMG src={project.projectPic} aria-label={project.projectTitle} /></A>
+                                <A href={project.projectURL} ><ProjectIMG src={project.projectPic} aria-label={project.projectTitle} /></A>
                                 <A href={project.projectURL}><ProjectTitle>{project.projectTitle}</ProjectTitle></A>
                                 <A href={project.projectURL}><Paragraph type="projects">{project.projectText}</Paragraph></A>
                             </div>

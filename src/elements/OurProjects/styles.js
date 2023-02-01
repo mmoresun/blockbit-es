@@ -128,7 +128,6 @@ export const ProjectIMG = styled.img`
 &:hover {
  transform: scale(1.05);
 }
-
 `;
 
 export const ProjectTitle = styled.h4`
@@ -136,6 +135,7 @@ export const ProjectTitle = styled.h4`
  font-size: 24px;
  font-weight: 700;
  transition: all 0.3s ease 0s;
+ color: rgb(16, 24, 32);
 
  @media ${device.tablet} {
  font-size: 24px;
@@ -151,7 +151,7 @@ export const ProjectTitle = styled.h4`
  }
 
  &:hover {
- color: rgb(41,130,226);
+ color: rgb(41,130,226); 
  }
 `;
 

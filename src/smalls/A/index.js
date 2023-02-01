@@ -3,7 +3,7 @@ import StyledA from './styles';
 
 const A = (props) => {
     return (
-        <StyledA>
+        <StyledA href={props.href} alt={props.alt} rel={props.rel}>
             {props.children}
         </StyledA>
     );
