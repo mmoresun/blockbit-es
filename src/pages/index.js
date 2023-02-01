@@ -5,6 +5,7 @@ import Layout from '../elements/Layout'
 import Introduction from '../elements/Introduction'
 import Attributes from '../elements/Attributes'
 import Technologies from '../elements/Technologies'
+import OurProjects from '../elements/OurProjects'
 import Banner from '../elements/Banner'
 import Dicsuss from '../elements/Discuss'
 import Collab from '../elements/Collab'
@@ -20,6 +21,7 @@ const IndexPage = () => {
       <Introduction />
       <Attributes />
       <Technologies />
+      <OurProjects />
       <Dicsuss />
       <Collab />
       <Workflow />

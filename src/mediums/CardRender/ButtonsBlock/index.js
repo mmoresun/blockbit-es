@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { cardRenderData } from '../../../data/cardRenderData';
+import { cardRenderData } from '../../../data/card-data';
 
 import {
     Container,

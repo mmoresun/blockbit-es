@@ -16,7 +16,6 @@ color: ${props => props.h2Color === "grey" && "#6E778C"};
 opacity: ${props => props.type === "partners" && '.7'};
 
 /* other settings */
-/* font-style: normal; */
 font-weight: 700;
 font-size: 54px;
 line-height: 120%;
@@ -28,9 +27,9 @@ line-height: 120%;
 
  @media ${device.mobile} {
 	
-	max-width: ${props => props.type === 'discuss' ? 'none' : '90%'};
-	font-size: ${props => props.type === 'discuss' ? '42px' : '32px'};
-	font-size: ${props => props.type === 'partners' ? '18px' : '32px'};
+	max-width: ${props => props.type === 'discuss' && 'none'};
+	font-size: ${props => props.type === 'discuss' && '42px' };
+	font-size: ${props => props.type === 'partners' && '18px'};
     line-height: 110%;
  }
 

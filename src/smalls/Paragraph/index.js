@@ -1,12 +1,13 @@
 import React from 'react';
 import StyledParagraph from './styles';
 
-// Paragraph has 5 types:
+// Paragraph has few types:
 // - banner
 // - intro
 // - techno
 // - workflow 
-// - attributes
+// - attribute
+// - projects
 //  Don't forget to set the type. If you will forget, the text becomes red (it means error) :)
 
 const Paragraph = (props) => {
