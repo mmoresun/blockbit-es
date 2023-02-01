@@ -1,12 +1,49 @@
 import React from 'react';
 
-import { Carousel } from 'react-responsive-carousel';
+import { reviewData } from '../../data/review-data';
+
+import MyCarousel from '../../mediums/MyCarousel';
+import {
+    ReviewWrapper,
+    ReviewContentWrapper,
+    ReviewIMG,
+    ReviewAuthorWrapper,
+    ReviewText,
+    ReviewSlideWrapper,
+    ReviewAuthorText,
+    ReviewCompanyText
+} from './styles';
 
 const Reviews = () => {
     return (
-        <div>
-            
-        </div>
+        <ReviewWrapper>
+            <MyCarousel
+                showStatus={false}
+                showArrows={false}
+                showThumbs={false}
+                autoPlay
+                swipeable
+                infiniteLoop
+                interval="5000"
+                transitionTime="400"            
+            >
+                {reviewData.map(review => {
+                    return (
+                        <ReviewSlideWrapper>
+                            <ReviewContentWrapper
+                                key={review.id}>
+                                <ReviewIMG src={review.pic} alt="" />
+                                <ReviewText>{review.text}</ReviewText>
+                                <ReviewAuthorWrapper>
+                                    <ReviewAuthorText>{review.author}</ReviewAuthorText>
+                                    <ReviewCompanyText>{review.company}</ReviewCompanyText>
+                                </ReviewAuthorWrapper>
+                            </ReviewContentWrapper>
+                        </ReviewSlideWrapper>
+                    )
+                })}
+            </MyCarousel>
+        </ReviewWrapper >
     );
 }
 
