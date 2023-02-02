@@ -14,7 +14,7 @@ const TechnoCarouselContent = () => {
     const firstSixCardsArr = technoCardData.content.slice(0, 6);
 
     // array of other "Technologies" cards (for the second slide)
-    const lastCardsArr = technoCardData.content.slice(6, technoCardData.length + 1);
+    const lastCardsArr = technoCardData.content.slice(6, technoCardData.content.length + 1);
 
     return (
         <MyCarousel
