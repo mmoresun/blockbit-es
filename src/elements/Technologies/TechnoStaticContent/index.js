@@ -13,7 +13,7 @@ const TechnoStaticContent = () => {
     return (
         <>
             <StyledCardsWrapper>
-                {technoCardData.map(elem => {
+                {technoCardData.content.map(elem => {
                     return <TechnoCard
                         key={elem.id}>
                         <TechIMG src={elem.image} alt="" rel="noreferrer" />

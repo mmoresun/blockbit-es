@@ -29,9 +29,8 @@ const Reviews = () => {
             >
                 {reviewData.map(review => {
                     return (
-                        <ReviewSlideWrapper>
-                            <ReviewContentWrapper
-                                key={review.id}>
+                        <ReviewSlideWrapper key={review.id}>
+                            <ReviewContentWrapper>
                                 <ReviewIMG src={review.reviewPic} alt="" />
                                 <ReviewText>{review.text}</ReviewText>
                                 <ReviewAuthorWrapper>
