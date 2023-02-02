@@ -10,7 +10,7 @@ import StyledLinkButton from '../../smalls/LinkButton/styles';
 import StyledHeaderLogoWrapper from './HeaderLogo/styles';
 import StyledHeaderLink from './HeaderLink/styles';
 
-import headerLogo from '../../images/logos/Blockbit.svg';
+import { headerData } from '../../data/header-data';
 
 const Header = () => {
 
@@ -36,10 +36,20 @@ const Header = () => {
             <HeaderWrapper>
                 <HeaderContentWrapper>
                     <HeaderLinkWrapper>
-                        <Link to="/"><StyledHeaderLogoWrapper src={headerLogo} alt="" /></Link>
-                        <StyledHeaderLink to="/">Services</StyledHeaderLink>
+                        <Link to="/"><StyledHeaderLogoWrapper src={headerData.logo} alt="" /></Link>
+                        {headerData.navMenu.map(elem => {
+                            return (
+                                <StyledHeaderLink 
+                                to={elem.url}
+                                key={elem.id}
+                                >
+                                    {elem.text}
+                                </StyledHeaderLink>
+                            )
+                        })}
+                        {/* <StyledHeaderLink to="/">Services</StyledHeaderLink>
                         <StyledHeaderLink to="/projects">Projects</StyledHeaderLink>
-                        <StyledHeaderLink to="/">Solutions</StyledHeaderLink>
+                        <StyledHeaderLink to="/">Solutions</StyledHeaderLink> */}
                     </HeaderLinkWrapper>
                     <StyledLinkButton type="headerButton" href="#contacts">Contact Us</StyledLinkButton>
                 </HeaderContentWrapper>
