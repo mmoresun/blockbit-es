@@ -1,13 +1,10 @@
 import React from 'react';
 
 import { workflowData } from '../../../data/workflow-data';
+import ScrollableLine from '../../ScrollableLine';
 
 import {
-    Container,
-    Parent,
-    ContentWrapper,
-    CardButton,
-    MagicWrapper,
+    CardButton,    
     ButtonRenderWrapper
 } from './styles';
 
@@ -15,23 +12,17 @@ const ButtonsBlock = ({ setActiveCard, activeCard }) => {
 
     return (
         <ButtonRenderWrapper>
-            <Container>
-                <Parent>
-                    <MagicWrapper>
-                        <ContentWrapper>
-                            {workflowData.map(elem => {
-                                return <CardButton
-                                    selected={activeCard === elem.id}
-                                    onClick={() => setActiveCard(elem.id)}
-                                    key={Math.random().toString(16).slice(2)}
-                                >
-                                    {elem.buttonText}
-                                </CardButton>
-                            })}
-                        </ContentWrapper>
-                    </MagicWrapper>
-                </Parent>
-            </Container>
+            <ScrollableLine>                
+                    {workflowData.map(elem => {
+                        return <CardButton
+                            selected={activeCard === elem.id}
+                            onClick={() => setActiveCard(elem.id)}
+                            key={Math.random().toString(16).slice(2)}
+                        >
+                            {elem.buttonText}
+                        </CardButton>
+                    })}                
+            </ScrollableLine>
         </ButtonRenderWrapper>
     );
 };
