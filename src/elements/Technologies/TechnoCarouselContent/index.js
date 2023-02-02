@@ -11,10 +11,10 @@ import { StyledTechnoPrevSlide, StyledTechnoNextSlide } from './styles';
 const TechnoCarouselContent = () => {
 
     // array of first six "Technologies" cards (for the first slide)
-    const firstSixCardsArr = technoCardData.slice(0, 6);
+    const firstSixCardsArr = technoCardData.content.slice(0, 6);
 
     // array of other "Technologies" cards (for the second slide)
-    const lastCardsArr = technoCardData.slice(6, technoCardData.length + 1);
+    const lastCardsArr = technoCardData.content.slice(6, technoCardData.length + 1);
 
     return (
         <MyCarousel
