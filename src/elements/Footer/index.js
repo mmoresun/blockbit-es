@@ -11,13 +11,8 @@ import FooterListTitle from '../../smalls/FooterListTitle';
 import P from '../../smalls/P';
 import FooterContactWrapper from './FooterContactWrapper/styles';
 
-import footerMediumIcon from '../../images/footer-icons/medium.svg';
-import footerYouTubeIcon from '../../images/footer-icons/youtube.svg';
-import footerTelegramIcon from '../../images/footer-icons/telegram.svg';
-import footerTwitterIcon from '../../images/footer-icons/twitter.svg';
-import footerLinkedinIcon from '../../images/footer-icons/linkedin.svg';
-import footerLocationIcon from '../../images/footer-icons/location.svg';
-import footerEmailIcon from '../../images/footer-icons/email.svg';
+// import footer content from data object
+import { footerData } from '../../data/footer-data';
 
 const Footer = () => {
     return (
@@ -25,14 +20,20 @@ const Footer = () => {
             <FooterContentWrapper>
                 <FooterSocialWrapper>
                     <FooterSocIconsWpapper>
-                        <a href="https://www.linkedin.com/company/blockbites" target="_blank" rel="noreferrer"><StyledFooterIcon src={footerLinkedinIcon} width="24px" alt="LinkedIn" /></a>
-                        <a href="https://twitter.com/theblockbites" target="_blank" rel="noreferrer"><StyledFooterIcon src={footerTwitterIcon} alt="Twitter" /></a>
-                        <a href="https://www.youtube.com/@blockbites" target="_blank" rel="noreferrer"><StyledFooterIcon src={footerYouTubeIcon} alt="YouTube" /></a>
-                        <a href="https://medium.com/@theblockbites" target="_blank" rel="noreferrer"><StyledFooterIcon src={footerMediumIcon} alt="Medium" /></a>
-                        <a href="https://t.me/+7nneDXbzEgMxNDBk" target="_blank" rel="noreferrer"><StyledFooterIcon src={footerTelegramIcon} alt="Telegram" /></a>
+
+                        {footerData.pics.map(elem => {
+                            return (
+                                <a key={elem.id}
+                                    href={elem.picUrl}
+                                    target="_blank"
+                                    rel="noreferrer">
+                                    <StyledFooterIcon src={elem.pic} width="24px" alt="LinkedIn" />
+                                </a>
+                            )
+                        })}
                     </FooterSocIconsWpapper>
                     <div>
-                        Copyright Blockbites 2022
+                        {footerData.copy}
                     </div>
                 </FooterSocialWrapper>
                 <FooterListWrapper>
@@ -40,36 +41,30 @@ const Footer = () => {
                         Get in touch
                     </FooterListTitle>
                     <FooterContactWrapper>
-                        <div><img src={footerLocationIcon} alt="" /></div>                        
-                        <p>Floriana Stablewskiego 43/4,
-                        <br />
-                        60-213 Poznań, Poland</p>
+                        <div><img src={footerData.address.icon} alt="" /></div>
+                        <p>{footerData.address.line1},
+                            <br />
+                            {footerData.address.line2}</p>
                     </FooterContactWrapper>
                     <FooterContactWrapper>
-                        <img src={footerEmailIcon} alt="" />
-                        hello@blockbit.es
+                        <img src={footerData.email.icon} alt="" />
+                        {footerData.email.text}
                     </FooterContactWrapper>
                 </FooterListWrapper>
-
                 <FooterListWrapper>
                     <FooterListTitle>
                         More
                     </FooterListTitle>
-                    <P pColor="white" pMargin="0 0 11px 0">
-                        <Link to="/">Home</Link>
-                    </P>
-                    <P pColor="white" pMargin="0 0 11px 0">
-                    <Link to="/projects">Projects</Link>
-                    </P>
-                    <P pColor="white" pMargin="0 0 11px 0">
-                    <Link to="#">Services</Link>
-                    </P>
-                    <P pColor="white" pMargin="0 0 11px 0">
-                    <Link to="#">Contacts</Link>
-                    </P>
-                    <P pColor="white" pMargin="0 0 11px 0">
-                    <Link to="#">Privacy Policies</Link>
-                    </P>
+                    {footerData.linkList.map(elem => {
+                        return (
+                            <P
+                                pColor="white"
+                                pMargin="0 0 11px 0"
+                                key={elem.id}>
+                                <Link to={elem.linkUrl}>{elem.linkText}</Link>
+                            </P>
+                        )
+                    })}
                 </FooterListWrapper>
             </FooterContentWrapper>
         </StyledFooter>
