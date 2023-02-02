@@ -37,9 +37,9 @@ const Header = () => {
                 <HeaderContentWrapper>
                     <HeaderLinkWrapper>
                         <Link to="/"><StyledHeaderLogoWrapper src={headerLogo} alt="" /></Link>
-                        <StyledHeaderLink to="#">Services</StyledHeaderLink>
+                        <StyledHeaderLink to="/">Services</StyledHeaderLink>
                         <StyledHeaderLink to="/projects">Projects</StyledHeaderLink>
-                        <StyledHeaderLink to="#">Solutions</StyledHeaderLink>
+                        <StyledHeaderLink to="/">Solutions</StyledHeaderLink>
                     </HeaderLinkWrapper>
                     <StyledLinkButton type="headerButton" href="#contacts">Contact Us</StyledLinkButton>
                 </HeaderContentWrapper>

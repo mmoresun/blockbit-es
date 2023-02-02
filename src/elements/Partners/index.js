@@ -31,14 +31,6 @@ const Partners = () => {
                             />
                         )
                     })}
-
-                        {/* <PartnerIMGWrapper src={polygon} />
-                        <PartnerIMGWrapper src={casper} />
-                        <PartnerIMGWrapper src={aws} />
-                        <PartnerIMGWrapper src={near} />
-                        <PartnerIMGWrapper src={defdone} />
-                        <PartnerIMGWrapper src={github} />
-                        <PartnerIMGWrapper src={eggforce} /> */}
                     </PartnerPicsWrapper>
                 </ScrollableLine >
             </PartnersContentWrapper>
