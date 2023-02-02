@@ -4,7 +4,7 @@ import consultingPic from '../images/workflow-pics/consulting.svg';
 import contractPic from '../images/workflow-pics/contract.svg';
 import puzzlePic from '../images/workflow-pics/puzzle.svg';
 
-export const cardRenderData = [
+export const workflowData = [
     {
         id: 1,
         desc: 'project',

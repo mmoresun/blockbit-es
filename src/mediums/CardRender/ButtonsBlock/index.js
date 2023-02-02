@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { cardRenderData } from '../../../data/card-data';
+import { workflowData } from '../../../data/workflow-data';
 
 import {
     Container,
@@ -19,7 +19,7 @@ const ButtonsBlock = ({ setActiveCard, activeCard }) => {
                 <Parent>
                     <MagicWrapper>
                         <ContentWrapper>
-                            {cardRenderData.map(elem => {
+                            {workflowData.map(elem => {
                                 return <CardButton
                                     selected={activeCard === elem.id}
                                     onClick={() => setActiveCard(elem.id)}

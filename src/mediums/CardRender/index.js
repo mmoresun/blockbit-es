@@ -4,7 +4,7 @@ import ButtonsBlock from './ButtonsBlock';
 import Card from './Card';
 import { CardsContainer } from './styles';
 
-import { cardRenderData } from '../../data/card-data';
+import { workflowData } from '../../data/workflow-data';
 
 const CardRender = () => {
 
@@ -18,10 +18,10 @@ const CardRender = () => {
             <CardsContainer>
 
                 <Card
-                    title={cardRenderData[activeCard - 1].cardTitle}
-                    cardPicture={cardRenderData[activeCard - 1].cardPic}
-                    cardText={cardRenderData[activeCard - 1].cardText}
-                    cardRecommend={cardRenderData[activeCard - 1].cardRecommend}
+                    title={workflowData[activeCard - 1].cardTitle}
+                    cardPicture={workflowData[activeCard - 1].cardPic}
+                    cardText={workflowData[activeCard - 1].cardText}
+                    cardRecommend={workflowData[activeCard - 1].cardRecommend}
                 />
             </CardsContainer>
         </>
