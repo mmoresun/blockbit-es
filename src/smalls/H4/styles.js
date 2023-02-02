@@ -14,6 +14,7 @@ color: #101820;
 
 @media ${device.mobile} {
     max-width: 100%;
+    line-height: 150%;
 }
 
 `;
