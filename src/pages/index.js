@@ -25,8 +25,8 @@ const IndexPage = () => {
       <Dicsuss />
       <Collab />
       <Workflow />
-      <Partners />
       <Reviews />
+      <Partners />      
     </Layout >
   )
 }

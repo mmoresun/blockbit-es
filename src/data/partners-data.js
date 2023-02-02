@@ -7,7 +7,7 @@ import github from '../images/partners-pics/github.svg';
 import eggforce from '../images/partners-pics/eggforce.png';
 
 export const partnersData = {
-    text: '',
+    text: 'Trusted by global brands and partners',
     content: [
         {id: 1, pic: polygon},
         {id: 2, pic: casper},
