@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { slide as Menu } from 'react-burger-menu';
 
-import headerLogo from '../../../images/logos/Blockbit.svg';
 import StyledLinkButton from '../../../smalls/LinkButton/styles';
 import {
     BurgerLogoLink,
@@ -11,7 +10,8 @@ import {
     BurgerContentWrapper,
     BurgerHeaderCanvas
 } from './styles';
-import './Sidebar.css'
+import './Sidebar.css';
+import { headerData } from '../../../data/header-data';
 
 // I had to completely replicate the menu (incl. logo) in the burger because this 3rd party burger component only works like this
 
@@ -42,12 +42,12 @@ const BurgerMenu = () => {
 
     const closeSideBar = () => {
         setIsOPen(false);
-      }
+    }
 
     return (
         <div style={{ position: 'fixed', top: '0', right: '0', display: 'flex', zIndex: '10' }}>
             <BurgerHeaderCanvas isScrolled={isScrolled}>
-                <BurgerLogoLink to="/"><BurgerIMG src={headerLogo} alt="" /></BurgerLogoLink>
+                <BurgerLogoLink to="/"><BurgerIMG src={headerData.logo} alt="" /></BurgerLogoLink>
             </BurgerHeaderCanvas>
             <Menu
                 right
@@ -58,12 +58,19 @@ const BurgerMenu = () => {
             >
                 <BurgerContentWrapper>
                     <BurgerTextWrapper>
-                        <BurgerLogoLink to="/"><BurgerIMG src={headerLogo} alt="" /></BurgerLogoLink>
-                        <BurgerLinkWrapper to="#">Services</BurgerLinkWrapper>
-                        <BurgerLinkWrapper to="/projects">Projects</BurgerLinkWrapper>
-                        <BurgerLinkWrapper to="#">Solutions</BurgerLinkWrapper>
+                        <BurgerLogoLink to="/"><BurgerIMG src={headerData.logo} alt="" /></BurgerLogoLink>
+                        {headerData.navMenu.map(elem => {
+                            return (
+                                <BurgerLinkWrapper
+                                    key={elem.id}
+                                    to={elem.url}
+                                >
+                                    {elem.text}
+                                </BurgerLinkWrapper>
+                            )
+                        })}
                     </BurgerTextWrapper>
-                    <StyledLinkButton type="bannerBurgerButton" href="/#contacts "onClick={closeSideBar}>Contact us</StyledLinkButton>
+                    <StyledLinkButton type="bannerBurgerButton" href="/#contacts " onClick={closeSideBar}>Contact us</StyledLinkButton>
                 </BurgerContentWrapper>
             </Menu>
         </div >

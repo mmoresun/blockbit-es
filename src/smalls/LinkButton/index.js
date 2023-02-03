@@ -15,6 +15,7 @@ const LinkButton = (props) => {
     return (
         <StyledLinkButton    
             type={props.type}
+            to={props.to}
         >
             {props.children}
         </StyledLinkButton>
